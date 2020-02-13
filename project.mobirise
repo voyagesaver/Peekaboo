@@ -67,7 +67,7 @@
       }
     ],
     "uniqCompNum": 97,
-    "versionPublish": "4.9.5",
+    "versionPublish": "4.12.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/peekaboo-smaller-favicon-128x119.png",
     "noImageResize": "",
@@ -5187,9 +5187,10 @@
     },
     "download.html": {
       "settings": {
-        "meta_descr": "Web Generator Description",
-        "title": "Download",
-        "order": 1
+        "meta_descr": "Join Peekaboo Beta",
+        "title": "Join Peekaboo Data",
+        "order": 1,
+        "meta_image": "@PROJECT_PATH@/assets/images/ezgif.com-video-to-gif%20(1).gif"
       },
       "components": [
         {
