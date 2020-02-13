@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Latest Peekaboo Website",
-    "currentPage": "page8.html",
+    "currentPage": "download.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -5185,7 +5185,7 @@
         }
       ]
     },
-    "page8.html": {
+    "download.html": {
       "settings": {
         "meta_descr": "Web Generator Description",
         "title": "Download",
@@ -5213,7 +5213,9 @@
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "header5-2r"
+          "_anchor": "header5-2r",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_styles": {
