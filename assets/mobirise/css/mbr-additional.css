@@ -1886,51 +1886,6 @@ section.lazy-placeholder:after {
 .cid-rhCcRAsQb2 .content-slider-wrap {
   width: 76%;
 }
-.cid-rDubToZ5vR {
-  padding-top: 30px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-rDubToZ5vR .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rDubToZ5vR .formoid {
-  margin: auto;
-}
-.cid-rDubToZ5vR .form-control {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.cid-rDubToZ5vR .input-group-btn .btn {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0 !important;
-}
-.cid-rDubToZ5vR a:not([href]):not([tabindex]) {
-  color: #fff;
-}
-.cid-rDubToZ5vR a.btn-white:not([href]):not([tabindex]) {
-  color: #333;
-}
-@media (max-width: 768px) {
-  .cid-rDubToZ5vR .mbr-form .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .cid-rDubToZ5vR .form-group,
-  .cid-rDubToZ5vR .input-group-btn,
-  .cid-rDubToZ5vR .input-group-btn .btn {
-    max-width: 300px;
-    width: 100%;
-  }
-}
-@media (min-width: 769px) {
-  .cid-rDubToZ5vR .mbr-form .row > * {
-    padding: 0 0.5rem;
-  }
-}
 .cid-rhScWz39Lj {
   padding-top: 15px;
   padding-bottom: 15px;
