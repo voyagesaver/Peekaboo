@@ -6193,8 +6193,16 @@ section.lazy-placeholder:after {
 .cid-rUEQtC2Voc .dropdown-item:hover {
   color: #000000 !important;
 }
+.cid-rUF3K2EI7U {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  background: linear-gradient(45deg, #ffffff, #ffffff);
+}
+.cid-rUF3K2EI7U .btn {
+  margin: 0 0 .5rem 0;
+}
 .cid-rUEQtDMFEc {
-  padding-top: 120px;
+  padding-top: 45px;
   padding-bottom: 15px;
   background-color: #ffffff;
 }
