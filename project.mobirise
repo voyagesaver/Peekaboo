@@ -66,7 +66,7 @@
         "url": "https://fonts.googleapis.com/css?family=Varela+Round:400"
       }
     ],
-    "uniqCompNum": 116,
+    "uniqCompNum": 120,
     "versionPublish": "4.12.2",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/peekaboo-smaller-favicon-128x119.png",
@@ -86,7 +86,7 @@
       "settings": {
         "meta_descr": "Take our survey and get a chance to win a $50 Amazon Gift card",
         "title": "Survey",
-        "order": 10,
+        "order": 9,
         "header_custom": "",
         "html_before": ""
       },
@@ -1529,7 +1529,7 @@
       "settings": {
         "meta_descr": "Web Page Creator Description",
         "title": "Investor",
-        "order": 11
+        "order": 10
       },
       "components": [
         {
@@ -2145,7 +2145,7 @@
       "settings": {
         "meta_descr": "Peekaboo App Privacy Policy",
         "title": "Privacy Policy",
-        "order": 9
+        "order": 8
       },
       "components": [
         {
@@ -2650,7 +2650,7 @@
       "settings": {
         "meta_descr": "Peekaboo: Where Businesses Grow, and Customers Fall in Love",
         "title": "Peekaboo Merchant",
-        "order": 7
+        "order": 6
       },
       "components": [
         {
@@ -3438,7 +3438,7 @@
       "settings": {
         "meta_descr": "Peekaboo App Privacy Policy",
         "title": "Terms of Use Agreement",
-        "order": 8
+        "order": 7
       },
       "components": [
         {
@@ -5638,7 +5638,7 @@
       "settings": {
         "meta_descr": "Site Builder Description",
         "title": "Feedback",
-        "order": 6
+        "order": 5
       },
       "components": [
         {
@@ -6272,7 +6272,7 @@
       "settings": {
         "meta_descr": "Site Builder Description",
         "title": "Brand Ambassador",
-        "order": 5
+        "order": 1
       },
       "components": [
         {
@@ -6708,12 +6708,67 @@
           },
           "_name": "info2",
           "_customHTML": "<section class=\"mbr-section info2\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subttle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Text on Right/Left\" name=\"reverseContent\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main justify-content-center\">\n            <div class=\"media-container-column col-12 col-lg-3 col-md-4\">\n                <div class=\"mbr-section-btn align-left py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">\n                    <span class=\"mbri-preview mbr-iconfont\"></span>\n                    SEE MORE\n                    </a>\n                </div>\n            </div>\n            <div class=\"media-container-column title col-12 col-lg-7 col-md-6\">\n                <h2 mbr-if=\"showTitle\" class=\"align-right mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    GRADIENT BACKGROUND\n                </h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-right mbr-light mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                    Info block with gradient. Text is aligned to right.\n                </h3>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rUF3K2EI7U",
+          "_cid": "rUFl7ur4be",
+          "_anchor": "info2-3b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "info2-37"
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
+            },
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#333333"
+            },
+            "H1": {
+              "color": "#9843ed"
+            }
+          },
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"55\">\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg && bg.type == 'color'\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/frame-1-3-324x300.png\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">\n                    Become a brand ambassador now</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">\n                        Help us grow Peekaboo and get some awesome perks for yourself in the process\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"brandambassador.html#extForm2-35\" data-app-placeholder=\"Type Text\">APPLY NOW</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rUF5R3tiav",
+          "_anchor": "header3-39",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": "mobirise4-blocks/components",
@@ -6866,7 +6921,7 @@
             }
           },
           "_name": "extForm2",
-          "_customHTML": "<section class=\"mbr-section extForm\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Form on Left/Right\" name=\"reverseContent\" checked>\n        <input type=\"checkbox\" title=\"Show Form Title\" name=\"showFormTitle\" checked>\n        <input type=\"color\" title=\"Form BG Color\" name=\"formBg\" value=\"#9843ed\">\n        <input type=\"range\" title=\"Form BG Opacity\" name=\"formOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\" condition=\"showSubText\" checked>\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#9843ed\" condition=\"showLine && showSubText\">\n        <input type=\"checkbox\" title=\"Show SubText\" name=\"showSubText\">\n\n        <header>Style</header>\n        <input type=\"checkbox\" name=\"customStyle\" title=\"Custom Style\" checked>\n        <input type=\"color\" name=\"fieldColor\" title=\"Field\" value=\"#f5f5f5\" condition=\"customStyle\">\n        <input type=\"color\" name=\"fieldHover\" title=\"Field Hover\" value=\"#f5f5f5\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderColor\" title=\"Border\" value=\"#e8e8e8\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderHover\" title=\"Border Hover\" value=\"#e8e8e8\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formText\" title=\"Text\" value=\"#656565\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formPlaceholder\" title=\"Placeholders\" value=\"#656565\" condition=\"customStyle\">\n        \n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n   <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-6 col-lg-6 block-content\">\n                <div class=\"form-block\">\n                    <div class=\"bg\"></div>\n                    <div class=\"form-wrap\" mbr-form>\n                    <!---Formbuilder Form--->\n                        <form action=\"em@peekaboo.live\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                            <div class=\"form-row\">\n                                <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                                <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"></div>\n                            </div>\n                            <div class=\"dragArea form-row\">\n                                <div class=\"col-md-12\">\n                                    <h4 mbr-theme-style=\"display-5\" class=\"mbr-fonts-style mb-4 mbr-fonts-style\" mbr-if=\"showFormTitle\">Join our team now!</h4>\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"name\">\n                                    <input type=\"text\" name=\"name\" placeholder=\"Your Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control input\">\n                                </div>\n                                <div data-for=\"email\" class=\"col-md-12 form-group \">\n                                    <input type=\"text\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" class=\"form-control input\" required=\"required\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"Instagram Handle\">\n                                    <input type=\"text\" name=\"Instagram\" placeholder=\"Instagram Handle\" data-form-field=\"Instagram\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"TikTok\">\n                                    <input type=\"text\" name=\"TikTok\" placeholder=\"TikTok Handle\" data-form-field=\"TikTok\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"Youtube\">\n                                    <input type=\"text\" name=\"Youtube\" placeholder=\"Youtube Handle\" data-form-field=\"Youtube\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"message\" hidden=\"hidden\">\n                                    <textarea type=\"textarea\" name=\"message\" placeholder=\"Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control input\" hidden=\"hidden\"></textarea>\n                                </div>\n                                <div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\" class=\"col-md-12 input-group-btn mt-2\"><a type=\"submit\" class=\"btn btn-primary btn-form btn-bgr\" data-app-placeholder=\"Type Text\">SUBMIT APPLICATION</a></div>\n                            </div>\n                        </form><!---Formbuilder Form--->\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-6 col-lg-6\">\n                <div class=\"text-block\">\n                    <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Become a brand ambassador</h2>\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Help us grow Peekaboo and get some awesome perks for yourself in the process</h3>\n                    <p class=\"mb-4 form-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".form-text\">Click any text to edit or style it. Select text to insert a link. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add themes.</p>\n                    <div class=\"mbr-section-btn mb-5\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-bgr btn-black\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">MORE</a></div>\n                </div>\n                <p class=\"mb-4 mbr-fonts-style subtext\" mbr-theme-style=\"display-7\" mbr-class=\"{'pt-5': showLine}\" mbr-if=\"showSubText\">*We dont share your personal info with anyone.&nbsp;</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section extForm\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Form on Left/Right\" name=\"reverseContent\" checked>\n        <input type=\"checkbox\" title=\"Show Form Title\" name=\"showFormTitle\" checked>\n        <input type=\"color\" title=\"Form BG Color\" name=\"formBg\" value=\"#9843ed\">\n        <input type=\"range\" title=\"Form BG Opacity\" name=\"formOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\" condition=\"showSubText\" checked>\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#9843ed\" condition=\"showLine && showSubText\">\n        <input type=\"checkbox\" title=\"Show SubText\" name=\"showSubText\">\n\n        <header>Style</header>\n        <input type=\"checkbox\" name=\"customStyle\" title=\"Custom Style\" checked>\n        <input type=\"color\" name=\"fieldColor\" title=\"Field\" value=\"#f5f5f5\" condition=\"customStyle\">\n        <input type=\"color\" name=\"fieldHover\" title=\"Field Hover\" value=\"#f5f5f5\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderColor\" title=\"Border\" value=\"#e8e8e8\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderHover\" title=\"Border Hover\" value=\"#e8e8e8\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formText\" title=\"Text\" value=\"#656565\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formPlaceholder\" title=\"Placeholders\" value=\"#656565\" condition=\"customStyle\">\n        \n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n   <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-6 col-lg-6 block-content\">\n                <div class=\"form-block\">\n                    <div class=\"bg\"></div>\n                    <div class=\"form-wrap\" mbr-form>\n                    <!---Formbuilder Form--->\n                        <form action=\"em@peekaboo.live\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                            <div class=\"form-row\">\n                                <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                                <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"></div>\n                            </div>\n                            <div class=\"dragArea form-row\">\n                                <div class=\"col-md-12\">\n                                    <h4 mbr-theme-style=\"display-5\" class=\"mbr-fonts-style mb-4 mbr-fonts-style\" mbr-if=\"showFormTitle\">Join our team now!</h4>\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"name\">\n                                    <input type=\"text\" name=\"name\" placeholder=\"Your Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control input\">\n                                </div>\n                                <div data-for=\"email\" class=\"col-md-12 form-group \">\n                                    <input type=\"text\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" class=\"form-control input\" required=\"required\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"Instagram Handle\">\n                                    <input type=\"text\" name=\"Instagram\" placeholder=\"Instagram Handle\" data-form-field=\"Instagram\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"TikTok\">\n                                    <input type=\"text\" name=\"TikTok\" placeholder=\"TikTok Handle\" data-form-field=\"TikTok\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"Youtube\">\n                                    <input type=\"text\" name=\"Youtube\" placeholder=\"Youtube Handle\" data-form-field=\"Youtube\" mbr-theme-style=\"display-7\" class=\"form-control input\">\n                                </div>\n                                <div class=\"col-md-12 form-group \" data-for=\"message\" hidden=\"hidden\">\n                                    <textarea type=\"textarea\" name=\"message\" placeholder=\"Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control input\" hidden=\"hidden\"></textarea>\n                                </div>\n                                <div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\" class=\"col-md-12 input-group-btn mt-2\"><a type=\"submit\" class=\"btn btn-primary btn-form btn-bgr\" data-app-placeholder=\"Type Text\">SUBMIT APPLICATION</a></div>\n                            </div>\n                        </form><!---Formbuilder Form--->\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
           "_cid": "rUEQtDMFEc",
           "_anchor": "extForm2-35",
           "_PHPplaceholders": [],
