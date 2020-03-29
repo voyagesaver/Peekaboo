@@ -6750,7 +6750,7 @@
                 "color": "@formText",
                 "line-height": "1.43",
                 "min-height": "3.5em",
-                "border-radius": "5.25rem",
+                "border-radius": "0.25rem",
                 "&:focus, &:hover": {
                   "border": "1px solid @borderHover",
                   "background-color": "@fieldHover"
@@ -6801,7 +6801,8 @@
                 "right": "0",
                 "background": "@formBg",
                 "opacity": "@formOpacity",
-                "z-index": "0"
+                "z-index": "0",
+                "border-radius": "1.55rem"
               },
               ".form-wrap": {
                 "position": "relative",

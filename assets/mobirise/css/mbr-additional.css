@@ -6231,7 +6231,7 @@ section.lazy-placeholder:after {
   color: #656565;
   line-height: 1.43;
   min-height: 3.5em;
-  border-radius: 5.25rem;
+  border-radius: 0.25rem;
 }
 .cid-rUEQtDMFEc .form-control:focus,
 .cid-rUEQtDMFEc .form-control:hover {
@@ -6288,6 +6288,7 @@ section.lazy-placeholder:after {
   background: #9843ed;
   opacity: 1;
   z-index: 0;
+  border-radius: 1.55rem;
 }
 .cid-rUEQtDMFEc .form-block .form-wrap {
   position: relative;
