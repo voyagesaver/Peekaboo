@@ -6298,6 +6298,10 @@ section.lazy-placeholder:after {
 .cid-rUEQtDMFEc textarea.form-control {
   resize: none;
 }
+.cid-rUEQtDMFEc .media-container-row {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
 @media (min-width: 768px) {
   .cid-rUEQtDMFEc .container > .row > .col-md-6:first-child {
     padding-right: 30px;
