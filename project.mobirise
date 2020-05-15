@@ -67,7 +67,7 @@
       }
     ],
     "uniqCompNum": 129,
-    "versionPublish": "4.12.2",
+    "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/peekaboo-smaller-favicon-128x119.png",
     "noImageResize": "",
@@ -80,7 +80,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "google-analytics": "<!-- Facebook Pixel Code -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https://connect.facebook.net/en_US/fbevents.js');\n  fbq('init', '647182812430317');\n  fbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\n  src=\"https://www.facebook.com/tr?id=647182812430317&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Facebook Pixel Code -->"
+    "google-analytics": ""
   },
   "pages": {
     "survey.html": {
