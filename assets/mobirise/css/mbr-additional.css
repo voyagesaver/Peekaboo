@@ -4392,9 +4392,17 @@ section.lazy-placeholder:after {
 .cid-rDufqpKWAD .media-container-row .mbr-text {
   color: #232323;
 }
-.cid-rWsK88Qz3r {
-  padding-top: 120px;
+.cid-s1WFVAjPw1 {
+  padding-top: 60px;
   padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-s1WFVAjPw1 P {
+  color: #767676;
+}
+.cid-rWsK88Qz3r {
+  padding-top: 0px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 .cid-rWsK88Qz3r .title {
